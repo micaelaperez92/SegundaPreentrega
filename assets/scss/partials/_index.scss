@@ -1,0 +1,33 @@
+/* Index webpage Properties */
+
+.price-cards {
+  background-color: $productos-bg-color;
+  border-top: $border;
+  border-bottom: $border;
+}
+
+.card-custom {
+  max-width: 18rem;
+  box-shadow: $box-shadow;
+}
+
+.card-title-custom {
+  height: 45px;
+  word-spacing: -3px;
+}
+
+.card-text-custom {
+  color: $font-color;
+  height: 45px;
+}
+
+.card-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  height: 55px;
+}
+
+.card-link-custom {
+  @include zoom-in-transition;
+}

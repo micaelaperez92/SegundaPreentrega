@@ -1,0 +1,22 @@
+/* Footer Properties */
+
+footer {
+  background-color: rgb(0, 0, 0, 0.05);
+  border-top: $border;
+  margin-top: auto;
+  padding: 1rem;
+
+  ul li {
+    margin: 0;
+    list-style: none;
+    padding: 0 10px;
+    @include zoom-in-transition-pc;
+  }
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}

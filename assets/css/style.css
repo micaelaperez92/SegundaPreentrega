@@ -1,0 +1,336 @@
+/* General Properties */
+html,
+body {
+  font-family: "Didact Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  max-width: 100%;
+}
+
+.html-index {
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+}
+body.index {
+  background-color: #e1f3ff;
+  background-image: linear-gradient(to bottom right, #e1f3ff, #ffd4d9);
+}
+body.productos {
+  background-color: #ffe9df;
+}
+body.faq {
+  background-color: #ffe6eb;
+}
+body.nosotros {
+  background-color: #eef5f1;
+}
+body.contacto {
+  background-color: #d6c1e2;
+}
+body.error404 {
+  background-color: #355070;
+  background-image: linear-gradient(to bottom right, #355070, #6d597a);
+}
+body main {
+  margin-top: 1.5rem;
+  justify-content: start;
+  text-align: start;
+  margin-bottom: 1.5rem;
+}
+body h1, body h3,
+body h2 {
+  margin-bottom: 1.5rem;
+  margin-right: 20px;
+  letter-spacing: 1px;
+}
+@media (max-width: 767px) {
+  body h1, body h3,
+  body h2 {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+body h3 {
+  letter-spacing: 0;
+}
+body h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+body p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+@media (max-width: 767px) {
+  body p {
+    text-align-last: center;
+  }
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body li {
+  margin-top: 10px;
+  font-size: 1.15rem;
+}
+body svg {
+  color: rgba(0, 0, 0, 0.45);
+}
+body .side-image {
+  display: flex;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  max-width: 90%;
+  margin: auto;
+  position: sticky;
+  top: 150px;
+}
+@media (max-width: 767px) {
+  body .side-image {
+    position: static;
+    max-width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body .side-image {
+    top: 220px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body .side-image {
+    top: 180px;
+  }
+}
+@media (min-width: 1400px) {
+  body .side-image {
+    max-width: 85%;
+  }
+}
+body .error404-font {
+  color: #f2e9e4;
+}
+body .error404-link {
+  color: #aaa1c8;
+}
+
+/* Navbar Properties */
+.navbar-custom {
+  background-color: #ffd4d9;
+  border-bottom: solid 0.5px rgba(0, 0, 0, 0.1);
+  opacity: 95%;
+}
+
+.nav-item-custom {
+  margin: 0;
+}
+
+.nav-link-custom {
+  font-size: 1.1rem;
+  transition: all 0.25s;
+}
+.nav-link-custom:hover {
+  transform: scale(1.1);
+}
+
+.navbar-brand-custom {
+  font-size: 1.35rem;
+  transition: all 0.25s;
+}
+@media (min-width: 1200px) {
+  .navbar-brand-custom:hover {
+    transform: scale(1.1);
+  }
+}
+
+.logo {
+  width: auto;
+  height: 32px;
+}
+
+/* Index webpage Properties */
+.price-cards {
+  background-color: #ffe9df;
+  border-top: solid 0.5px rgba(0, 0, 0, 0.1);
+  border-bottom: solid 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.card-custom {
+  max-width: 18rem;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.card-title-custom {
+  height: 45px;
+  word-spacing: -3px;
+}
+
+.card-text-custom {
+  color: rgba(0, 0, 0, 0.65);
+  height: 45px;
+}
+
+.card-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  height: 55px;
+}
+
+.card-link-custom {
+  transition: all 0.25s;
+}
+.card-link-custom:hover {
+  transform: scale(1.1);
+}
+
+/* "Productos" webpage Properties */
+.sp-img {
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  transition: all 0.25s;
+}
+@media (min-width: 1200px) {
+  .sp-img:hover {
+    transform: scale(1.1);
+  }
+}
+
+.starter-packs-table * {
+  text-align: center;
+  margin: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.starter-packs-table h2 {
+  font-weight: bold;
+}
+
+@media (max-width: 575px) {
+  .sp-img {
+    max-width: 100%;
+  }
+  .starter-packs-table * {
+    font-size: small;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sp-img {
+    max-width: 90%;
+  }
+  .starter-packs-table * {
+    font-size: medium;
+  }
+  .starter-packs-table h2 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .sp-img {
+    max-width: 80%;
+  }
+  .starter-packs-table h2 {
+    font-size: 1.5rem;
+  }
+}
+.fa-circle-check {
+  background-color: #cce1d5;
+  padding: 0;
+  border-radius: 100%;
+  font-size: 2em;
+}
+
+.fa-circle-xmark {
+  background-color: #f4acb7;
+  padding: 0;
+  border-radius: 100%;
+  font-size: 2em;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  transition: all 0.25s;
+}
+@media (min-width: 1200px) {
+  .price:hover {
+    transform: scale(1.1);
+  }
+}
+
+.disclaimer {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* "Preguntas frecuentes" webpage Properties */
+.accordion-button-custom, .accordion-item-custom,
+.accordion-button-custom:focus,
+.accordion-button-custom:not(.collapsed) {
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #ffe6eb;
+  box-shadow: none;
+}
+
+.accordion-item-custom {
+  border: solid 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header-custom {
+  margin: 0;
+}
+
+.accordion-body-custom {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+/* WhatsApp button Properties */
+.whatsapp-floating-icon {
+  font-size: 3.5rem;
+  left: auto;
+  margin-right: 15px;
+  transition: all 0.25s;
+}
+@media (min-width: 1200px) {
+  .whatsapp-floating-icon:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Footer Properties */
+footer {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-top: solid 0.5px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+  padding: 1rem;
+}
+footer ul li {
+  margin: 0;
+  list-style: none;
+  padding: 0 10px;
+  transition: all 0.25s;
+}
+@media (min-width: 1200px) {
+  footer ul li:hover {
+    transform: scale(1.1);
+  }
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
